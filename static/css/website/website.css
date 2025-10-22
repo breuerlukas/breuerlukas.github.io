@@ -12,6 +12,18 @@
   object-fit: contain;
 }
 
+.website-profile-link {
+  padding: 20px;
+  border-radius: 100%;
+  color: grey;
+  border: 2px solid grey;
+}
+
+.website-profile-link:hover {
+  color: #3c8ef7;
+  border: 2px solid #3c8ef7;
+}
+
 #website-profile-contact {
   width: 80%;
   padding: 15px 30px;
@@ -20,9 +32,32 @@
   margin-left: auto;
   margin-right: auto;
   display: block;
-  background-color: #0d6efd;
+  background: radial-gradient(circle at center,
+    #1b5fd1 0%,
+    #3c8ef7 75%,
+    #3c8ef7 100%
+  );
   border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow:
+    0 0 25px rgba(140, 190, 255, 0.7),
+    0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.25s;
+  cursor: pointer;
   outline: none;
+}
+
+#website-profile-contact:hover {
+  background: radial-gradient(circle at center,
+  #2a7beb 0%,
+  #56a7ff 75%,
+  #56a7ff 100%
+  );
+  box-shadow:
+    0 0 40px rgba(160, 210, 255, 0.9),
+    0 6px 14px rgba(0, 0, 0, 0.3);
 }
 
 #website-content {
@@ -40,6 +75,7 @@
   margin-bottom: 40px;
   padding: 15px 30px;
   border-radius: 40px;
+  color: lightgrey;
   border: 1px grey solid;
   width: fit-content;
 }
@@ -52,15 +88,20 @@
   display: flex;
   flex-direction: column;
   border: 1px grey solid;
-  padding: 10px 0;
+  padding: 15px 0;
   border-radius: 100px;
 }
 
 .website-navigator-entry {
-  padding: 20px;
+  padding: 15px 15px;
+}
+
+.website-navigator-entry:hover .website-navigator-icon, .website-navigator-entry-active .website-navigator-icon {
+  color: #3c8ef7 !important;
 }
 
 .website-navigator-icon {
-  font-size: 20px;
-  color: white;
+  font-size: 18px;
+  color: grey;
+  transition-duration: 0.1s;
 }
