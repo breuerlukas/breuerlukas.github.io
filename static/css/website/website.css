@@ -1,0 +1,107 @@
+#website-profile {
+  position: fixed;
+  width: 400px;
+  top: 50%;
+  left: 30px;
+  transform: translate(0, -50%);
+}
+
+#website-profile-picture {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.website-profile-link {
+  padding: 20px;
+  border-radius: 100%;
+  color: grey;
+  border: 2px solid grey;
+}
+
+.website-profile-link:hover {
+  color: #3c8ef7;
+  border: 2px solid #3c8ef7;
+}
+
+#website-profile-contact {
+  width: 80%;
+  padding: 15px 30px;
+  border-radius: 30px;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background: radial-gradient(circle at center,
+    #1b5fd1 0%,
+    #3c8ef7 75%,
+    #3c8ef7 100%
+  );
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow:
+    0 0 25px rgba(140, 190, 255, 0.7),
+    0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.25s;
+  cursor: pointer;
+  outline: none;
+}
+
+#website-profile-contact:hover {
+  background: radial-gradient(circle at center,
+  #2a7beb 0%,
+  #56a7ff 75%,
+  #56a7ff 100%
+  );
+  box-shadow:
+    0 0 40px rgba(160, 210, 255, 0.9),
+    0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+#website-content {
+  width: min(calc(750px), 95%);
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+.website-section {
+  margin-bottom: 100px;
+}
+
+.website-section-headline {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 15px 30px;
+  border-radius: 40px;
+  color: lightgrey;
+  border: 1px grey solid;
+  width: fit-content;
+}
+
+#website-navigator {
+  position: fixed;
+  top: 50%;
+  right: 50px;
+  transform: translate(0, -50%);
+  display: flex;
+  flex-direction: column;
+  border: 1px grey solid;
+  padding: 15px 0;
+  border-radius: 100px;
+}
+
+.website-navigator-entry {
+  padding: 15px 15px;
+}
+
+.website-navigator-entry:hover .website-navigator-icon, .website-navigator-entry-active .website-navigator-icon {
+  color: #3c8ef7 !important;
+}
+
+.website-navigator-icon {
+  font-size: 18px;
+  color: grey;
+  transition-duration: 0.1s;
+}
