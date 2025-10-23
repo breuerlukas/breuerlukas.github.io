@@ -18,35 +18,51 @@
   <body data-bs-theme="dark">
     <div class="d-flex justify-content-center align-items-center">
       <div id="website-profile">
-        <div class="border border-secondary rounded-4 p-5">
-          <div class="text-center">
-            <h1 class="fw-bold mb-0">Lukas Breuer</h1>
-          </div>
-          <img id="website-profile-picture" src="static/img/profile.webp" alt="Profile Picture">
-          <div class="mb-5 text-center">
-            <h5 class="mb-3">Bonn, Germany</h5>
-            <h5>contact@lukasbreuer.de</h5>
-          </div>
-          <div class="d-flex justify-content-center align-items-center">
-            <a class="website-profile-link" href="https://github.com/breuerlukas"><i class="fa-brands fa-github"></i></a>
-            <a class="website-profile-link" href="https://www.linkedin.com/in/lukasbreuer/"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a class="website-profile-link" role="button" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="lukas_breuer"><i class="fa-brands fa-discord"></i></a>
-            <a class="website-profile-link" href="mailto:contact@lukasbreuer.de"><i class="fa-solid fa-envelope"></i></a>
-          </div>
-          <button id="website-profile-contact" type="button"><i class="fa-regular fa-envelope me-2"></i> CONTACT ME</button>
+        <div class="text-center">
+          <h1 class="fw-bold mb-0">Lukas Breuer</h1>
         </div>
+        <img id="website-profile-picture" src="static/img/profile.webp" alt="Profile Picture">
+        <div class="mb-5 text-center">
+          <h5 class="mb-3">Bonn, Germany</h5>
+          <h5>contact@lukasbreuer.de</h5>
+        </div>
+        <div class="d-flex justify-content-center align-items-center" data-bs-toggle="tooltip-parent">
+          <a class="website-profile-link website-animation-down" href="https://github.com/breuerlukas"><i class="fa-brands fa-github"></i></a>
+          <a class="website-profile-link website-animation-down website-animation-delay-1" href="https://www.linkedin.com/in/lukasbreuer/"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a id="website-profile-link-discord" class="website-profile-link website-animation-down website-animation-delay-2" role="button" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="lukas_breuer"><i class="fa-brands fa-discord"></i></a>
+          <a class="website-profile-link website-animation-down website-animation-delay-3" href="mailto:contact@lukasbreuer.de"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <button id="website-profile-contact" type="button"><i class="fa-regular fa-envelope me-2"></i> CONTACT ME</button>
       </div>
       <div id="website-content">
         <div id="home" class="website-section">
-          <h5 class="website-section-headline"><i class="fa-regular fa-house me-2"></i> Introduce</h5>
+          <h6 class="website-section-headline"><i class="fa-regular fa-house me-2"></i> Introduce</h6>
+          <h1 id="website-title" class="website-section-title">Hi there 👋 I'm <span class="website-highlight">Lukas</span>, a Full Stack Software Developer</h1>
           <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
         </div>
         <div id="about" class="website-section">
-          <h5 class="website-section-headline"><i class="fa-regular fa-user me-2"></i> About</h5>
+          <h6 class="website-section-headline"><i class="fa-regular fa-user me-2"></i> About</h6>
+          <h1 class="website-section-title">Get to <span class="website-highlight">know me</span> better</h1>
           <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
         </div>
         <div id="resume" class="website-section">
-          <h5 class="website-section-headline"><i class="fa-solid fa-bars-staggered me-2"></i> Resume</h5>
+          <h6 class="website-section-headline"><i class="fa-solid fa-bars-staggered me-2"></i> Resume</h6>
+          <h1 class="website-section-title">Education & <span class="website-highlight">Experience</span></h1>
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div id="skills" class="website-section">
+          <h6 class="website-section-headline"><i class="fa-solid fa-layer-group me-2"></i> Skills</h6>
+          <h1 class="website-section-title">My <span class="website-highlight">Stack</span></h1>
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div id="portfolio" class="website-section">
+          <h6 class="website-section-headline"><i class="fa-regular fa-folder-open me-2"></i> Portfolio</h6>
+          <h1 class="website-section-title">My <span class="website-highlight">Projects</span></h1>
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div id="contact" class="website-section">
+          <h6 class="website-section-headline"><i class="fa-regular fa-envelope me-2"></i> Contact</h6>
+          <h1 class="website-section-title">How to <span class="website-highlight">reach me</span></h1>
           <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
         </div>
       </div>
@@ -54,16 +70,80 @@
         <a href="#home" class="website-navigator-entry website-navigator-entry-active"><i class="website-navigator-icon fa-regular fa-house"></i></a>
         <a href="#about" class="website-navigator-entry"><i class="website-navigator-icon fa-regular fa-user"></i></a>
         <a href="#resume" class="website-navigator-entry"><i class="website-navigator-icon fa-solid fa-bars-staggered"></i></a>
+        <a href="#skills" class="website-navigator-entry"><i class="website-navigator-icon fa-solid fa-layer-group"></i></a>
+        <a href="#portfolio" class="website-navigator-entry"><i class="website-navigator-icon fa-regular fa-folder-open"></i></a>
+        <a href="#contact" class="website-navigator-entry"><i class="website-navigator-icon fa-regular fa-envelope"></i></a>
       </div>
     </div>
   </body>
 
   <script>
-    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    $(document).ready(function() {
+      setupTooltips();
+      checkAnimations();
+      $(window).scroll(function() {
+        checkAnimations();
+      });
+    });
+
+    function setupTooltips() {
+      let tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip-parent"]'))
+      tooltipTriggerList.map(function (tooltipTriggerEl) {
+        tooltipTriggerEl.classList.add("position-relative");
+        return new bootstrap.Tooltip(tooltipTriggerEl.querySelectorAll('[data-bs-toggle="tooltip"]')[0], {
+          container: tooltipTriggerEl
+        });
+      });
+    }
+
+    function checkAnimations() {
+      checkAnimation("website-animation-opacity", "website-animation-opacity-show");
+      checkAnimation("website-animation-left", "website-animation-left-show");
+      checkAnimation("website-animation-right", "website-animation-right-show");
+      checkAnimation("website-animation-up", "website-animation-up-show");
+      checkAnimation("website-animation-down", "website-animation-down-show");
+      checkAnimation("website-animation-fly", "website-animation-fly-show");
+    }
+
+    function checkAnimation(elementClass, animationClass) {
+      let elements = document.getElementsByClassName(elementClass);
+      for (let i = 0; i < elements.length; i++) {
+        let element = elements[i];
+        let bottom_of_object = element.getBoundingClientRect().top - window.screen.height;
+        if (bottom_of_object < -window.screen.height / 6) {
+          processAnimation(element, elementClass, animationClass)
+        }
+      }
+    }
+
+    function processAnimation(element, elementClass, animationClass) {
+      if (window.screen.width < 1000) {
+        element.classList.remove(elementClass);
+        return;
+      }
+      let delay = 0;
+      if (element.classList.contains("website-animation-delay-1")) {
+        delay = 100;
+      } else if (element.classList.contains("website-animation-delay-2")) {
+        delay = 300;
+      } else if (element.classList.contains("website-animation-delay-3")) {
+        delay = 500;
+      }
+      setTimeout(function() {
+        element.classList.remove(elementClass);
+        element.classList.add(animationClass);
+        setTimeout(function () {
+          element.classList.remove(animationClass);
+        }, 1500);
+      }, delay);
+    }
 
     document.getElementById("website-profile-contact").addEventListener("click", function(){
       window.location.href = "mailto:contact@lukasbreuer.de";
+    });
+
+    document.getElementById("website-profile-link-discord").addEventListener("click", function(){
+      navigator.clipboard.writeText("lukas_breuer");
     });
   </script>
 </html>
