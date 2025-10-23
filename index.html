@@ -15,20 +15,23 @@
     <script src="static/dependency/lodash%404.17.21/lodash.min.js"></script>
     <title>Lukas Breuer</title>
   </head>
-  <body class="dark" data-bs-theme="dark">
+  <body data-bs-theme="dark">
     <div class="d-flex justify-content-center align-items-center">
       <div id="website-profile">
         <div class="border border-secondary rounded-4 p-5">
-          <div class="text-center mb-4">
-            <h2 class="fw-bold">Lukas Breuer</h2>
+          <div class="text-center">
+            <h1 class="fw-bold mb-0">Lukas Breuer</h1>
           </div>
-          <img id="website-profile-picture" src="static/img/profile.webp" class="rounded-5" alt="Profile Picture">
-          <div class="my-5 text-center">
+          <img id="website-profile-picture" src="static/img/profile.webp" alt="Profile Picture">
+          <div class="mb-5 text-center">
+            <h5 class="mb-3">Bonn, Germany</h5>
             <h5>contact@lukasbreuer.de</h5>
           </div>
           <div class="d-flex justify-content-center align-items-center">
-            <div class="website-profile-link"><i class="fa-brands fa-github"></i></div>
-            <div class="website-profile-link"><i class="fa-brands fa-linkedin-in"></i></div>
+            <a class="website-profile-link" href="https://github.com/breuerlukas"><i class="fa-brands fa-github"></i></a>
+            <a class="website-profile-link" href="https://www.linkedin.com/in/lukasbreuer/"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a class="website-profile-link" role="button" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="lukas_breuer"><i class="fa-brands fa-discord"></i></a>
+            <a class="website-profile-link" href="mailto:contact@lukasbreuer.de"><i class="fa-solid fa-envelope"></i></a>
           </div>
           <button id="website-profile-contact" type="button"><i class="fa-regular fa-envelope me-2"></i> CONTACT ME</button>
         </div>
@@ -54,4 +57,13 @@
       </div>
     </div>
   </body>
+
+  <script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+    document.getElementById("website-profile-contact").addEventListener("click", function(){
+      window.location.href = "mailto:contact@lukasbreuer.de";
+    });
+  </script>
 </html>
