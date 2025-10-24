@@ -241,3 +241,109 @@ body {
     scale: 1;
   }
 }
+
+#website-resume-timeline {
+  padding: 20px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+#website-resume-timeline:before {
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: 28px;
+  margin-left: -1px;
+  width: 2px;
+  height: calc(100% - 50px);
+  background: var(--border-color);
+  z-index: 1
+}
+
+.website-resume-entry {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  justify-content: space-between;
+  clear: both;
+  padding-bottom: 60px;
+}
+
+.website-resume-entry:last-child {
+  padding-bottom: 0;
+}
+
+.website-resume-entry-marker {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid var(--background-color);
+  outline: 2px solid var(--border-color);
+  background: var(--border-color);
+  margin-top: 5px;
+  z-index: 100;
+  transition-duration: 0.2s;
+}
+
+.website-resume-entry-time {
+  color: #797979;
+  transition-duration: 0.2s;
+}
+
+.website-resume-entry-description {
+  color: #797979;
+}
+
+.website-resume-entry:hover .website-resume-entry-marker {
+  outline: 2px solid var(--primary-color);
+  background: var(--primary-color);
+  box-shadow: 0 0 20px rgba(140, 190, 255, 0.9);
+}
+
+.website-resume-entry:hover .website-resume-entry-time {
+  color: var(--primary-color);
+}
+
+.website-resume-entry-content {
+  width: 95%;
+  padding: 0 15px;
+}
+
+#website-stack {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 30px;
+  row-gap: 30px;
+}
+
+.website-skill {
+  padding: 20px;
+  border-radius: 50px;
+  border: 2px solid var(--border-color);
+  transition-duration: 0.2s;
+  text-align: center;
+}
+
+.website-skill:hover {
+  border: 2px solid var(--primary-color);
+}
+
+.website-skill-icon {
+  font-size: 70px;
+  margin-bottom: 20px;
+  width: 80px;
+  height: 80px;
+}
+
+.website-skill-name {
+  margin-bottom: 30px;
+}
+
+.website-skill-rating {
+  color: var(--primary-color);
+}
