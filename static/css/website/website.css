@@ -5,10 +5,6 @@
   --background-color: #0d1117;
 }
 
-body {
-  background-color: var(--background-color) !important;
-}
-
 .website-highlight {
   color: var(--primary-color);
 }
@@ -90,7 +86,7 @@ body {
 #website-content {
   width: min(calc(750px), 95%);
   margin-top: 10vh;
-  margin-bottom: 10vh;
+  margin-bottom: 1vh;
   margin-left: calc(450px / 2);
 }
 
@@ -126,6 +122,10 @@ body {
   border: 1px var(--border-color) solid;
   padding: 15px 0;
   border-radius: 100px;
+}
+
+.website-navigator-entry-container {
+  padding: 12px 0;
 }
 
 .website-navigator-entry {
@@ -346,4 +346,25 @@ body {
 
 .website-skill-rating {
   color: var(--primary-color);
+}
+
+#footer {
+  color: #797979;
+  padding-top: 50px;
+}
+
+#footer a {
+  text-decoration: none;
+  color: #797979;
+  transition-duration: 0.1s;
+}
+
+#footer a:hover {
+  color: #575757;
+}
+
+.website-footer-divider {
+  width: 80%;
+  border-top: 1px solid var(--border-color);
+  margin: auto;
 }

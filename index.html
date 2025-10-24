@@ -3,10 +3,8 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta name="robots" content="index, follow">
-    <link rel="stylesheet" href="static/css/google/google-font.css">
     <link rel="stylesheet" href="static/css/base/main.css">
     <link rel="stylesheet" href="static/css/website/website.css">
-    <link rel="stylesheet" href="static/css/google/google-icon.css">
     <link rel="stylesheet" href="static/dependency/bootstrap%405.3.8/css/bootstrap.css">
     <link rel="stylesheet" href="static/dependency/font-awesome%407.0.0/css/all.css">
     <script src="static/dependency/bootstrap%405.3.8/js/bootstrap.bundle.js"></script>
@@ -155,15 +153,52 @@
           <h1 class="website-section-title">How to <span class="website-highlight">reach me</span></h1>
           <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
         </div>
+        <div id="footer" class="website-section">
+          <div class="website-footer-divider my-5"></div>
+          <div class="d-flex justify-content-center align-items-center">
+            <a href="imprint.html" class="me-5"><h6>Imprint</h6></a>
+            <a href="privacy.html"><h6>Privacy</h6></a>
+          </div>
+          <h5 id="website-footer-copyright" class="text-center mt-5">© <b>Lukas Breuer</b>.</h5>
+          <h5 class="text-center">All Rights Reserved.</h5>
+        </div>
       </div>
       <div id="website-navigator">
-        <a id="website-navigator-entry-home" href="#home" class="website-navigator-entry website-navigator-entry-active"><i class="website-navigator-icon fa-regular fa-house"></i></a>
-        <a id="website-navigator-entry-about" href="#about" class="website-navigator-entry"><i class="website-navigator-icon fa-regular fa-user"></i></a>
-        <a id="website-navigator-entry-statistics" href="#statistics" class="website-navigator-entry"><i class="website-navigator-icon fa-regular fa-chart-bar"></i></a>
-        <a id="website-navigator-entry-resume" href="#resume" class="website-navigator-entry"><i class="website-navigator-icon fa-regular fa-calendar"></i></a>
-        <a id="website-navigator-entry-skills" href="#skills" class="website-navigator-entry"><i class="website-navigator-icon fa-solid fa-layer-group"></i></a>
-        <a id="website-navigator-entry-portfolio"href="#portfolio" class="website-navigator-entry"><i class="website-navigator-icon fa-regular fa-folder-open"></i></a>
-        <a id="website-navigator-entry-contact" href="#contact" class="website-navigator-entry"><i class="website-navigator-icon fa-regular fa-envelope"></i></a>
+        <div class="website-navigator-entry-container" data-bs-toggle="tooltip-parent">
+          <a id="website-navigator-entry-home" href="#home" class="website-navigator-entry website-navigator-entry-active" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Home">
+            <i class="website-navigator-icon fa-regular fa-house"></i>
+          </a>
+        </div>
+        <div class="website-navigator-entry-container" data-bs-toggle="tooltip-parent">
+          <a id="website-navigator-entry-about" href="#about" class="website-navigator-entry" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="About">
+            <i class="website-navigator-icon fa-regular fa-user"></i>
+          </a>
+        </div>
+        <div class="website-navigator-entry-container" data-bs-toggle="tooltip-parent">
+          <a id="website-navigator-entry-statistics" href="#statistics" class="website-navigator-entry" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Statistics">
+            <i class="website-navigator-icon fa-regular fa-chart-bar"></i>
+          </a>
+        </div>
+        <div class="website-navigator-entry-container" data-bs-toggle="tooltip-parent">
+          <a id="website-navigator-entry-resume" href="#resume" class="website-navigator-entry" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Resume">
+            <i class="website-navigator-icon fa-regular fa-calendar"></i>
+          </a>
+        </div>
+        <div class="website-navigator-entry-container" data-bs-toggle="tooltip-parent">
+          <a id="website-navigator-entry-skills" href="#skills" class="website-navigator-entry" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Skills">
+            <i class="website-navigator-icon fa-solid fa-layer-group"></i>
+          </a>
+        </div>
+        <div class="website-navigator-entry-container" data-bs-toggle="tooltip-parent">
+          <a id="website-navigator-entry-portfolio"href="#portfolio" class="website-navigator-entry" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Portfolio">
+            <i class="website-navigator-icon fa-regular fa-folder-open"></i>
+          </a>
+        </div>
+        <div class="website-navigator-entry-container" data-bs-toggle="tooltip-parent">
+          <a id="website-navigator-entry-contact" href="#contact" class="website-navigator-entry" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Contact">
+            <i class="website-navigator-icon fa-regular fa-envelope"></i>
+          </a>
+        </div>
       </div>
     </div>
   </body>
@@ -171,6 +206,7 @@
   <script>
     $(document).ready(function() {
       setupTooltips();
+      setupCopyright();
       checkAnimations();
       $(window).scroll(function() {
         checkAnimations();
@@ -238,6 +274,9 @@
       for (let i = 0; i < elements.length; i++) {
         let element = elements[i];
         let navigator = document.getElementById("website-navigator-entry-" + element.id);
+        if (!navigator) {
+          continue;
+        }
         let bottom_of_object = element.getBoundingClientRect().top - window.screen.height;
         navigator.classList.remove("website-navigator-entry-active");
         if (bottom_of_object < -window.screen.height / 6) {
@@ -245,6 +284,11 @@
         }
       }
       active.classList.add("website-navigator-entry-active");
+    }
+
+    function setupCopyright() {
+      document.getElementById("website-footer-copyright").innerHTML =
+        "© " + new Date().getFullYear() + " <b>Lukas Breuer</b>.";
     }
 
     document.getElementById("website-profile-contact").addEventListener("click", function(){
