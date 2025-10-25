@@ -305,7 +305,25 @@
   margin-top: 5px;
   z-index: 100;
   transition-duration: 0.2s;
+  position: relative;
 }
+
+.website-resume-entry-marker-active {
+  animation: website-resume-entry-marker-pulse 1.5s infinite !important;
+}
+
+@keyframes website-resume-entry-marker-pulse {
+  0% {
+    box-shadow: 0 0 0 0 #535353;
+  }
+  70% {
+    box-shadow: 0 0 0 16px rgba(0, 0, 0, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
 
 .website-resume-entry-time {
   color: #797979;
@@ -365,6 +383,32 @@
 
 .website-skill-rating {
   color: var(--primary-color);
+}
+
+.website-portfolio-project {
+  margin-bottom: 100px;
+}
+
+.website-portfolio-project .carousel-item {
+  padding: 0 10px;
+}
+
+.website-portfolio-project .carousel-item img {
+  border-radius: 20px;
+}
+
+.website-portfolio-project-skill {
+  border-radius: 100px;
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  margin-left: 20px;
+  transition-duration: 0.2s;
+}
+
+.website-portfolio-project-skill:hover {
+  background-color: var(--border-color);
+  color: white;
 }
 
 #footer {
