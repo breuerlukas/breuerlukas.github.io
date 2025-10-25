@@ -242,6 +242,23 @@
   }
 }
 
+.website-statistic-number {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  transition-duration: 0.2s;
+}
+
+.website-statistic:hover .website-statistic-number {
+  scale: 1.1;
+  font-weight: bold;
+  text-shadow: 0 0 50px rgba(13, 110, 253, 1);
+}
+
+#website-statistics-contributions {
+  filter: invert(1) hue-rotate(180deg);
+  width: 100%;
+}
+
 #website-resume-timeline {
   padding: 20px;
   margin: auto;

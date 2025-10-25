@@ -47,7 +47,24 @@
         <div id="statistics" class="website-section">
           <h6 class="website-section-headline"><i class="fa-regular fa-chart-bar me-3"></i>STATISTICS</h6>
           <h1 class="website-section-title"><span class="website-highlight">Numbers</span> speak louder than words</h1>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+          <div class="d-flex justify-content-between align-items-center my-5 py-5 px-4 text-center">
+            <div class="website-statistic website-animation-left">
+              <h1 class="website-statistic-number">8+</h1>
+              <span>Years of experience</span>
+            </div>
+            <div class="website-statistic website-animation-down">
+              <h1 class="website-statistic-number">300+</h1>
+              <span>Implemented projects</span>
+            </div>
+            <div class="website-statistic website-animation-right">
+              <h1 class="website-statistic-number">5+</h1>
+              <span>Companies worked for</span>
+            </div>
+          </div>
+          <div class="text-center website-animation-fly">
+            <a href="https://github.com/breuerlukas"><img id="website-statistics-contributions" class="mb-3" src="https://ghchart.rshah.org/breuerlukas" alt="GitHub Contributions Chart"></a>
+            <span class="text-secondary">My recent activity</span>
+          </div>
         </div>
         <div id="resume" class="website-section">
           <h6 class="website-section-headline"><i class="fa-regular fa-calendar me-3"></i>RESUME</h6>
@@ -149,11 +166,6 @@
           <h1 class="website-section-title">My <span class="website-highlight">Projects</span></h1>
           <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
         </div>
-        <div id="contact" class="website-section">
-          <h6 class="website-section-headline"><i class="fa-regular fa-envelope me-3"></i>CONTACT</h6>
-          <h1 class="website-section-title">How to <span class="website-highlight">reach me</span></h1>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-        </div>
         <div id="footer" class="website-section">
           <div class="website-footer-divider my-5"></div>
           <div class="d-flex justify-content-center align-items-center">
@@ -195,11 +207,6 @@
             <i class="website-navigator-icon fa-regular fa-folder-open"></i>
           </a>
         </div>
-        <div class="website-navigator-entry-container" data-bs-toggle="tooltip-parent">
-          <a id="website-navigator-entry-contact" href="#contact" class="website-navigator-entry" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Contact">
-            <i class="website-navigator-icon fa-regular fa-envelope"></i>
-          </a>
-        </div>
       </div>
     </div>
   </body>
@@ -209,6 +216,7 @@
       setupTooltips();
       setupCopyright();
       checkAnimations();
+      checkNavigation();
       $(window).scroll(function() {
         checkAnimations();
         checkNavigation();
@@ -271,16 +279,15 @@
 
     function checkNavigation() {
       let elements = document.getElementsByClassName("website-section");
-      let active;
-      for (let i = 0; i < elements.length; i++) {
+      let active = null;
+      for (let i = elements.length - 1; i >= 0; i--) {
         let element = elements[i];
         let navigator = document.getElementById("website-navigator-entry-" + element.id);
         if (!navigator) {
           continue;
         }
-        let bottom_of_object = element.getBoundingClientRect().top - window.screen.height;
         navigator.classList.remove("website-navigator-entry-active");
-        if (bottom_of_object < -window.screen.height / 6) {
+        if (active == null && (element.getBoundingClientRect().top < 100 || i === 0)) {
           active = navigator;
         }
       }
