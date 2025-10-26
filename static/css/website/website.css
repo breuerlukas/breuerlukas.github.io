@@ -83,11 +83,69 @@
     0 6px 14px rgba(0, 0, 0, 0.3);
 }
 
+@media(max-width: 2000px) {
+  #website-profile {
+    width: 380px;
+    padding: 40px;
+  }
+
+  #website-content {
+    margin-left: calc((30px + 380px + 100px) / 2);
+  }
+
+  #website-profile-picture {
+    margin: 40px 0;
+  }
+
+  #website-profile-contact {
+    margin-top: 60px;
+  }
+}
+
+@media(max-width: 1600px) {
+  #website-profile {
+    width: 350px;
+    padding: 30px;
+  }
+
+  #website-content {
+    margin-left: calc((30px + 350px + 100px) / 2);
+  }
+
+  #website-profile-picture {
+    margin: 30px 0;
+  }
+
+  #website-profile-contact {
+    margin-top: 50px;
+  }
+}
+
+@media(max-width: 1400px) {
+  #website-profile {
+    position: relative;
+    width: min(calc(750px), 90%);
+    transform: none;
+    margin: 5vh auto auto;
+    left: 0;
+  }
+
+  #website-profile-picture {
+    width: min(calc(300px), 100%);
+    height: auto;
+  }
+
+  #website-content {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
 #website-content {
-  width: min(calc(750px), 95%);
+  width: min(calc(750px), 90%);
   margin-top: 10vh;
   margin-bottom: 1vh;
-  margin-left: calc(450px / 2);
+  margin-left: calc((30px + 450px + 100px) / 2);
 }
 
 .website-section {
@@ -112,6 +170,24 @@
   font-size: 75px;
 }
 
+@media(max-width: 850px) {
+  #website-title {
+    font-size: 65px;
+  }
+}
+
+@media(max-width: 600px) {
+  #website-title {
+    font-size: 55px;
+  }
+}
+
+@media(max-width: 450px) {
+  #website-title {
+    font-size: 40px;
+  }
+}
+
 #website-navigator {
   position: fixed;
   top: 50%;
@@ -122,6 +198,12 @@
   border: 1px var(--border-color) solid;
   padding: 15px 0;
   border-radius: 100px;
+}
+
+@media(max-width: 1050px) {
+  #website-navigator {
+    display: none;
+  }
 }
 
 .website-navigator-entry-container {
@@ -356,6 +438,25 @@
   row-gap: 60px;
 }
 
+@media(max-width: 850px) {
+  #website-stack {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media(max-width: 600px) {
+  #website-stack {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+  }
+}
+
+@media(max-width: 380px) {
+  #website-stack {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 .website-skill {
   padding: 20px;
   border-radius: 50px;
@@ -398,12 +499,17 @@
   border: 1px solid var(--border-color);
 }
 
+.website-portfolio-project .carousel-control-prev, .website-portfolio-project .carousel-control-next {
+  mix-blend-mode: difference;
+  color: white !important;
+  filter: none !important;
+}
+
 .website-portfolio-project-skill {
   border-radius: 100px;
   padding: 10px 20px;
   background-color: white;
   color: black;
-  margin-left: 20px;
   transition-duration: 0.2s;
 }
 
