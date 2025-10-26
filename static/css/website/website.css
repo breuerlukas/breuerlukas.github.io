@@ -427,12 +427,8 @@
 
 
 .website-resume-entry-time {
-  color: #797979;
+  color: #596268;
   transition-duration: 0.2s;
-}
-
-.website-resume-entry-description {
-  color: #797979;
 }
 
 .website-resume-entry:hover .website-resume-entry-marker {
@@ -448,6 +444,22 @@
 .website-resume-entry-content {
   width: 95%;
   padding: 0 15px;
+}
+
+#website-testimonials .carousel-item {
+  padding: 0 10px;
+}
+
+#website-testimonials .carousel-control-prev, #website-testimonials .carousel-control-next {
+  mix-blend-mode: difference;
+  color: white !important;
+  filter: none !important;
+}
+
+.website-testimonial {
+  padding: 50px 90px;
+  border: 1px solid var(--border-color);
+  border-radius: 32px;
 }
 
 #website-stack {
