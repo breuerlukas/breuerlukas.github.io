@@ -395,6 +395,7 @@
 
 .website-portfolio-project .carousel-item img {
   border-radius: 20px;
+  border: 1px solid var(--border-color);
 }
 
 .website-portfolio-project-skill {
