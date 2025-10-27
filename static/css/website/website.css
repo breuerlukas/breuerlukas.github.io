@@ -457,9 +457,15 @@
 }
 
 .website-testimonial {
-  padding: 50px 90px;
+  padding: 50px calc(15% - 10px);
   border: 1px solid var(--border-color);
   border-radius: 32px;
+}
+
+@media(max-width: 600px) {
+  .website-testimonial {
+    padding: 30px calc(15% - 10px);
+  }
 }
 
 #website-stack {

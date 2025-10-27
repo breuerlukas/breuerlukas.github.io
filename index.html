@@ -132,7 +132,7 @@
                     </div>
                   </div>
                   <div class="mt-4">
-                    <span class="blockquote">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate."</span>
+                    <span class="blockquote">"Mr. Breuer always performed all tasks assigned to him to our complete satisfaction. He carried out his duties with a high level of motivation and commitment, as well as punctually and reliably. His behavior toward superiors, colleagues, and customers was exemplary and cooperative at all times. "</span>
                   </div>
                 </div>
               </div>
@@ -542,9 +542,13 @@
     }
 
     function checkAnimation(elementClass, animationClass) {
-      let elements = document.getElementsByClassName(elementClass);
+      let elements = [...document.getElementsByClassName(elementClass)];
       for (let i = 0; i < elements.length; i++) {
         let element = elements[i];
+        if (window.screen.width < 1400) {
+          element.classList.remove(elementClass);
+          continue;
+        }
         let bottom_of_object = element.getBoundingClientRect().top - window.screen.height;
         if (bottom_of_object < -window.screen.height / 6) {
           processAnimation(element, elementClass, animationClass)
@@ -553,10 +557,6 @@
     }
 
     function processAnimation(element, elementClass, animationClass) {
-      if (window.screen.width < 1000) {
-        element.classList.remove(elementClass);
-        return;
-      }
       let delay = 0;
       if (element.classList.contains("website-animation-delay-1")) {
         delay = 100;
