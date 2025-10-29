@@ -473,6 +473,28 @@
   }
 }
 
+#website-companies {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 30px;
+  row-gap: 60px;
+  text-align: center;
+}
+
+.website-company {
+  filter: grayscale(1) !important;
+  transition-duration: 0.2s;
+}
+
+.website-company:hover {
+  filter: grayscale(0) !important;
+}
+
+.website-company-logo {
+  width: 96px;
+  height: 96px;
+}
+
 #website-stack {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
