@@ -481,6 +481,25 @@
   text-align: center;
 }
 
+@media(max-width: 850px) {
+  #website-companies {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media(max-width: 600px) {
+  #website-companies {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+  }
+}
+
+@media(max-width: 380px) {
+  #website-companies {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 .website-company {
   filter: grayscale(1) !important;
   transition-duration: 0.2s;
