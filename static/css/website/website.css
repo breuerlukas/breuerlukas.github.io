@@ -446,15 +446,6 @@
   padding: 0 15px;
 }
 
-#website-testimonials .carousel-item {
-  padding: 0 10px;
-  height: 100%;
-}
-
-.website-testimonial {
-  height: 100%;
-}
-
 #website-testimonials .carousel-control-prev, #website-testimonials .carousel-control-next {
   mix-blend-mode: difference;
   color: white !important;
