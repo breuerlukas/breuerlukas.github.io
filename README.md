@@ -8,3 +8,7 @@ This repository contains the source code for my personal website. It showcases m
 |      | Build Status                                                                                                                             |
 |------|------------------------------------------------------------------------------------------------------------------------------------------|
 | main | ![pages-build-deployment](https://github.com/breuerlukas/breuerlukas.github.io/actions/workflows/pages/pages-build-deployment/badge.svg) |
+
+## License
+
+[GPL](https://github.com/breuerlukas/breuerlukas.github.io/blob/main/LICENSE.md)
