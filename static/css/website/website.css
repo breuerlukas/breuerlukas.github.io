@@ -180,6 +180,10 @@ a:focus-visible, button:focus-visible {
   text-wrap: balance;
 }
 
+#home {
+  padding-top: 60px;
+}
+
 #website-title {
   font-size: 75px;
 }
@@ -638,13 +642,16 @@ a:focus-visible, button:focus-visible {
   }
 
   .website-stack-tools {
-    gap: 12px;
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
   }
 
   .website-stack-tool {
     flex-direction: column;
     gap: 4px;
-    font-size: 12px;
+    font-size: 11px;
   }
 
   .website-stack-tool img {
