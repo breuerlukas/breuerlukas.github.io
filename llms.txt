@@ -1,0 +1,32 @@
+# Lukas Breuer
+
+> Personal website of Lukas Breuer, a full stack software developer from Bonn, Germany. He builds backend systems, web and mobile apps and the infrastructure they run on, and studies Computer Science at the University of Bonn.
+
+Lukas has been writing software for more than nine years. His first job was an internship at ISB Solutions in 2018, while he was still in school. He later developed for GommeHD.net, founded the startups Taskwolf and Dulno (2023 to 2026), and has worked as a student assistant at PRIOR KRITIS at the University of Bonn since October 2026, protecting security-critical infrastructure.
+
+Technology stack: TypeScript, React and Flutter on the frontend; Java, Spring and FastAPI on the backend; Docker and Kubernetes for infrastructure.
+
+Contact: contact@lukasbreuer.de
+
+## Pages
+
+- [Home](https://lukasbreuer.de/): About, resume, testimonials, companies, technology stack and portfolio on a single page
+
+## Projects
+
+- [Insulink](https://insulink.de/): Fully open-source glucose ecosystem with an app, a browser panel, a self-hostable API and a predictor. Not a medical device
+- [PodDeck](https://github.com/poddeck/): Open-source platform for observing and managing Kubernetes clusters
+- [Dulno](https://dulno.com/): Digital stamp cards as an app, replacing paper stamp cards
+- [Wing](https://github.com/breuerlukas/wing/): Autopilot for remote-controlled aircraft, written in C++ for Arduino
+- Taskwolf: Automation platform for everyday processes, discontinued
+- Panel: Administration panel for the infrastructure of his own projects, including Kubernetes management
+
+## Profiles
+
+- [GitHub](https://github.com/breuerlukas): Source code and open-source work
+- [LinkedIn](https://www.linkedin.com/in/lukasbreuer/): Professional profile
+
+## Optional
+
+- [Imprint](https://lukasbreuer.de/imprint.html): Legal notice
+- [Privacy Policy](https://lukasbreuer.de/privacy.html): How personal data is handled

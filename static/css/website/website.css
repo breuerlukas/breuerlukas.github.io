@@ -356,6 +356,7 @@ a:focus-visible, button:focus-visible {
 #website-statistics-contributions {
   filter: invert(1) hue-rotate(180deg);
   width: 100%;
+  height: auto;
 }
 
 @media(max-width: 600px) {
@@ -446,27 +447,38 @@ a:focus-visible, button:focus-visible {
   position: relative;
 }
 
-.website-resume-entry-marker-active {
-  animation: website-resume-entry-marker-pulse 1.5s infinite !important;
+.website-resume-entry-marker-active::after {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  z-index: -1;
+  border-radius: 50%;
+  background: #535353;
+  animation: website-resume-entry-marker-pulse 1.5s infinite;
 }
 
 @keyframes website-resume-entry-marker-pulse {
   0% {
-    box-shadow: 0 0 0 0 #535353;
+    transform: scale(1);
+    opacity: 1;
   }
-  70% {
-    box-shadow: 0 0 0 16px rgba(0, 0, 0, 0);
-  }
-  100% {
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  70%, 100% {
+    transform: scale(2.6);
+    opacity: 0;
   }
 }
 
+@media(prefers-reduced-motion: reduce) {
+  .website-resume-entry-marker-active::after {
+    animation: none;
+    opacity: 0;
+  }
+}
 
 .website-resume-entry .website-resume-entry-time {
   display: block;
   margin-bottom: 8px;
-  color: #596268;
+  color: #7d8590;
   transition-duration: 0.2s;
 }
 
@@ -809,18 +821,18 @@ a:focus-visible, button:focus-visible {
 }
 
 #footer {
-  color: #797979;
+  color: #8b949e;
   padding-top: 50px;
 }
 
 #footer a {
   text-decoration: none;
-  color: #797979;
+  color: #8b949e;
   transition-duration: 0.1s;
 }
 
 #footer a:hover {
-  color: #575757;
+  color: #c9d1d9;
 }
 
 .website-footer-divider {
