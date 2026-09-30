@@ -6,7 +6,7 @@
     <meta name="robots" content="index, follow">
     <meta property="og:url" content="https://lukasbreuer.de/">
     <meta property="og:site_name" content="Lukas Breuer">
-    <meta name="description" content="I am a passionate software developer and love what I do. Feel free to see my skills for yourself.">
+    <meta name="description" content="Lukas Breuer, software developer from Bonn. Computer Science student and builder of PodDeck, Dulno and Wing.">
     <link rel=icon href="favicon.ico" type="image/x-icon" sizes="144x144">
     <link rel="stylesheet" href="static/css/base/main.css">
     <link rel="stylesheet" href="static/css/website/website.css">
@@ -42,96 +42,132 @@
       <div id="website-content">
         <div id="home" class="website-section">
           <h1 class="website-section-headline h6"><i class="fa-regular fa-house me-3"></i>HOME</h1>
-          <h2 id="website-title" class="website-section-title h1">Hi there <img id="website-title-hand" src="static/img/home/hand.gif" alt="👋"> I'm <span class="website-highlight">Lukas</span>, a Full Stack Software Developer</h2>
-          <p class="text-secondary">I am a passionate software developer and love what I do. Feel free to see my skills for yourself.</p>
+          <h2 id="website-title" class="website-section-title h1">Hi there, I'm <span class="website-highlight">Lukas</span>, a Full Stack Software Developer</h2>
+          <p class="text-secondary">I'm a software developer from Bonn. I started programming while I was still in school, founded two startups along the way and study Computer Science at the University of Bonn.</p>
         </div>
         <div id="statistics" class="website-section">
           <h1 class="website-section-headline h6"><i class="fa-regular fa-chart-bar me-3"></i>STATISTICS</h1>
-          <h2 class="website-section-title h1"><span class="website-highlight">Numbers</span> speak louder than words</h2>
-          <div class="d-lg-flex justify-content-between align-items-center my-5 py-5 px-4 text-center">
-            <div class="website-statistic website-animation-left">
-              <h1 class="website-statistic-number">8+</h1>
-              <span>Years of experience</span>
+          <h2 class="website-section-title h1">A few <span class="website-highlight">numbers</span></h2>
+          <div id="website-statistics">
+            <div class="website-statistic website-animation-down">
+              <span class="website-statistic-number"><span class="website-statistic-count">9</span>+</span>
+              <span class="text-secondary">Years of experience</span>
             </div>
-            <div class="website-statistic website-animation-down my-lg-0 my-5">
-              <h1 class="website-statistic-number">300+</h1>
-              <span>Implemented projects</span>
+            <div class="website-statistic website-animation-down website-animation-delay-1">
+              <span class="website-statistic-number"><span class="website-statistic-count">300</span>+</span>
+              <span class="text-secondary">Implemented projects</span>
             </div>
-            <div class="website-statistic website-animation-right">
-              <h1 class="website-statistic-number">5+</h1>
-              <span>Companies worked for</span>
+            <div class="website-statistic website-animation-down website-animation-delay-2">
+              <span class="website-statistic-number"><span class="website-statistic-count">5</span>+</span>
+              <span class="text-secondary">Companies worked for</span>
             </div>
-          </div>
-          <div class="text-center website-animation-fly">
-            <a href="https://github.com/breuerlukas"><img id="website-statistics-contributions" class="mb-3" src="https://ghchart.rshah.org/breuerlukas" alt="GitHub Contributions Chart"></a>
-            <span class="text-secondary">My recent activity</span>
+            <a id="website-statistics-activity" class="website-statistic website-animation-down website-animation-delay-3" href="https://github.com/breuerlukas">
+              <img id="website-statistics-contributions" src="https://ghchart.rshah.org/3c8ef7/breuerlukas" alt="GitHub contributions chart">
+              <span class="text-secondary">My GitHub activity over the last year</span>
+            </a>
           </div>
         </div>
         <div id="about" class="website-section">
           <h1 class="website-section-headline h6"><i class="fa-regular fa-user me-3"></i>ABOUT</h1>
-          <h2 class="website-section-title h1">Get to <span class="website-highlight">know me</span> better</h2>
-          <p class="text-secondary">Hi, I’m Lukas Breuer from Bonn, Germany. I’m a passionate Full Stack Software Developer with over eight years of experience bringing ideas to life through code. I’ve had the chance to work on a wide range of projects, from building robust backend systems in Java and Spring to creating interactive applications with Flutter and JavaScript.</p>
-          <p class="text-secondary">Along the way, I’ve contributed to multiple companies, founded my own ventures, and embraced the challenge of constantly learning and exploring new technologies. I enjoy turning complex problems into elegant solutions and sharing my work with a community that values innovation and creativity.</p>
+          <h2 class="website-section-title h1">A bit <span class="website-highlight">about me</span></h2>
+          <p class="text-secondary">I have been writing software for more than nine years. My first job was an internship at ISB Solutions in 2018, while I was still in school. Later I developed for GommeHD.net, where thousands of players used what I built, and since 2023 I have been founding and building my own products.</p>
+          <p class="text-secondary">My work ranges from backend systems in Java and Spring to apps in Flutter and web frontends in React, and I like to run all of it myself on Kubernetes. What I enjoy most is taking a complicated problem and turning it into something that is simple to use.</p>
         </div>
         <div id="resume" class="website-section">
           <h1 class="website-section-headline h6"><i class="fa-regular fa-calendar me-3"></i>RESUME</h1>
           <h2 class="website-section-title h1 mb-4">Education & <span class="website-highlight">Experience</span></h2>
           <div id="website-resume-timeline">
-            <div class="website-resume-entry">
-              <div class="website-resume-entry-marker"></div>
-              <div class="website-resume-entry-content website-animation-right">
-                <h3 class="website-resume-entry-time h5">2025</h3>
-                <h4 class="website-resume-entry-title h2">Accelerator Member</h4>
-                <span class="text-secondary">Since February 2025, I have successfully participated in the 6-month <a class="link-secondary" href="https://www.digitalhub.de/startups/hubgrade/">HubGrade Startup Accelerator Program</a> at <a class="link-secondary" href="https://www.digitalhub.de/">DigitalHub Bonn</a>. This has allowed me to make valuable contacts and expand my knowledge in a wide range of workshops.</span>
+            <div class="website-resume-entry website-animation-right">
+              <button type="button" class="website-resume-entry-toggle collapsed" data-bs-toggle="collapse" data-bs-target="#website-resume-entry-1" aria-expanded="false" aria-controls="website-resume-entry-1">
+                <span class="website-resume-entry-marker website-resume-entry-marker-active"></span>
+                <span class="website-resume-entry-title h2"><span class="website-resume-entry-time h5">2026 - now</span>Student Assistant</span>
+                <i class="website-resume-entry-chevron fa-solid fa-chevron-down"></i>
+              </button>
+              <div id="website-resume-entry-1" class="collapse" data-bs-parent="#website-resume-timeline">
+                <div class="website-resume-entry-text">
+                  <span class="text-secondary">Since October 2026, I have been working as a student assistant at PRIOR KRITIS at the University of Bonn. There, we protect security-critical infrastructure.</span>
+                </div>
               </div>
             </div>
-            <div class="website-resume-entry">
-              <div class="website-resume-entry-marker website-resume-entry-marker-active"></div>
-              <div class="website-resume-entry-content website-animation-right">
-                <h3 class="website-resume-entry-time h5">2023 - now</h3>
-                <h4 class="website-resume-entry-title h2">Founder & Developer</h4>
-                <span class="text-secondary">In recent years, I have worked on two different startups. The first startup was called <a class="link-secondary" href="#website-portfolio-taskwolf">Taskwolf</a> and dealt with automation software. Unfortunately, the project did not prove successful, so I stopped developing it.</span><br><br>
-                <span class="text-secondary">The second startup was called <a class="link-secondary" href="#website-portfolio-dulno">Dulno</a>. The goal here was to replace analog stamp cards with digital stamp cards in order to benefit from the many advantages of the digital world.</span>
+            <div class="website-resume-entry website-animation-right">
+              <button type="button" class="website-resume-entry-toggle collapsed" data-bs-toggle="collapse" data-bs-target="#website-resume-entry-2" aria-expanded="false" aria-controls="website-resume-entry-2">
+                <span class="website-resume-entry-marker"></span>
+                <span class="website-resume-entry-title h2"><span class="website-resume-entry-time h5">2025</span>Accelerator Member</span>
+                <i class="website-resume-entry-chevron fa-solid fa-chevron-down"></i>
+              </button>
+              <div id="website-resume-entry-2" class="collapse" data-bs-parent="#website-resume-timeline">
+                <div class="website-resume-entry-text">
+                  <span class="text-secondary">Since February 2025, I have successfully participated in the 6-month <a class="link-secondary" href="https://www.digitalhub.de/startups/hubgrade/">HubGrade Startup Accelerator Program</a> at <a class="link-secondary" href="https://www.digitalhub.de/">DigitalHub Bonn</a>. This has allowed me to make valuable contacts and expand my knowledge in a wide range of workshops.</span>
+                </div>
               </div>
             </div>
-            <div class="website-resume-entry">
-              <div class="website-resume-entry-marker website-resume-entry-marker-active"></div>
-              <div class="website-resume-entry-content website-animation-right">
-                <h3 class="website-resume-entry-time h5">2023 - now</h3>
-                <h4 class="website-resume-entry-title h2">University</h4>
-                <span class="text-secondary">I am currently studying for a Bachelor of Science in Computer Science at the University of Bonn. In doing so, I consolidated my theoretical knowledge of computer science and was able to expand my knowledge in various new subject areas. I expect to successfully complete the bachelor's degree in 2026.</span>
+            <div class="website-resume-entry website-animation-right">
+              <button type="button" class="website-resume-entry-toggle collapsed" data-bs-toggle="collapse" data-bs-target="#website-resume-entry-3" aria-expanded="false" aria-controls="website-resume-entry-3">
+                <span class="website-resume-entry-marker"></span>
+                <span class="website-resume-entry-title h2"><span class="website-resume-entry-time h5">2023 - 2026</span>Founder & Developer</span>
+                <i class="website-resume-entry-chevron fa-solid fa-chevron-down"></i>
+              </button>
+              <div id="website-resume-entry-3" class="collapse" data-bs-parent="#website-resume-timeline">
+                <div class="website-resume-entry-text">
+                  <span class="text-secondary">In recent years, I have worked on two different startups. The first startup was called <a class="link-secondary" href="#website-portfolio-modal-taskwolf" data-bs-toggle="modal">Taskwolf</a> and dealt with automation software. Unfortunately, the project did not prove successful, so I stopped developing it.</span><br><br>
+                  <span class="text-secondary">The second startup was called <a class="link-secondary" href="#website-portfolio-modal-dulno" data-bs-toggle="modal">Dulno</a>. The goal here was to replace analog stamp cards with digital stamp cards in order to benefit from the many advantages of the digital world.</span>
+                </div>
               </div>
             </div>
-            <div class="website-resume-entry">
-              <div class="website-resume-entry-marker"></div>
-              <div class="website-resume-entry-content website-animation-right">
-                <h3 class="website-resume-entry-time h5">2020 - 2022</h3>
-                <h4 class="website-resume-entry-title h2">Software Developer</h4>
-                <span class="text-secondary">During this period, I worked on various projects as a software developer. I volunteered at <a class="link-secondary" href="https://www.linkedin.com/company/indielemon/">IndieLemon GmbH & Co. KG</a> on the <a class="link-secondary" href="https://www.gommehd.net/">GommeHD.net</a> project as a developer, where I was able to present my projects to an audience of thousands of gamers.</span><br><br>
-                <span class="text-secondary">I also worked for <a class="link-secondary" href="https://www.linkedin.com/in/jan-rabek/">Jan Rabek</a> on the <a class="link-secondary" href="https://iostein.de/">iostein.de</a> project as a software developer on a mini-job basis, which allowed me to gain valuable experience.</span>
+            <div class="website-resume-entry website-animation-right">
+              <button type="button" class="website-resume-entry-toggle collapsed" data-bs-toggle="collapse" data-bs-target="#website-resume-entry-4" aria-expanded="false" aria-controls="website-resume-entry-4">
+                <span class="website-resume-entry-marker website-resume-entry-marker-active"></span>
+                <span class="website-resume-entry-title h2"><span class="website-resume-entry-time h5">2023 - now</span>University</span>
+                <i class="website-resume-entry-chevron fa-solid fa-chevron-down"></i>
+              </button>
+              <div id="website-resume-entry-4" class="collapse" data-bs-parent="#website-resume-timeline">
+                <div class="website-resume-entry-text">
+                  <span class="text-secondary">I am currently studying for a Bachelor of Science in Computer Science at the University of Bonn. In doing so, I consolidated my theoretical knowledge of computer science and was able to expand my knowledge in various new subject areas. I expect to successfully complete the bachelor's degree in 2026.</span>
+                </div>
               </div>
             </div>
-            <div class="website-resume-entry">
-              <div class="website-resume-entry-marker"></div>
-              <div class="website-resume-entry-content website-animation-right">
-                <h3 class="website-resume-entry-time h5">2018 - 2019</h3>
-                <h4 class="website-resume-entry-title h2">Internship & Vacation Job</h4>
-                <span class="text-secondary">I gained my first work experience during an internship at <a class="link-secondary" href="https://www.isb-solutions.de/">ISB Solutions GmbH</a>. Six months later, I took on a summer job at the same company, where I was able to make new contacts and expand my knowledge with useful new information.</span>
+            <div class="website-resume-entry website-animation-right">
+              <button type="button" class="website-resume-entry-toggle collapsed" data-bs-toggle="collapse" data-bs-target="#website-resume-entry-5" aria-expanded="false" aria-controls="website-resume-entry-5">
+                <span class="website-resume-entry-marker"></span>
+                <span class="website-resume-entry-title h2"><span class="website-resume-entry-time h5">2020 - 2022</span>Software Developer</span>
+                <i class="website-resume-entry-chevron fa-solid fa-chevron-down"></i>
+              </button>
+              <div id="website-resume-entry-5" class="collapse" data-bs-parent="#website-resume-timeline">
+                <div class="website-resume-entry-text">
+                  <span class="text-secondary">During this period, I worked on various projects as a software developer. I volunteered at <a class="link-secondary" href="https://www.linkedin.com/company/indielemon/">IndieLemon GmbH & Co. KG</a> on the <a class="link-secondary" href="https://www.gommehd.net/">GommeHD.net</a> project as a developer, where I was able to present my projects to an audience of thousands of gamers.</span><br><br>
+                  <span class="text-secondary">I also worked for <a class="link-secondary" href="https://www.linkedin.com/in/jan-rabek/">Jan Rabek</a> on the <a class="link-secondary" href="https://iostein.de/">iostein.de</a> project as a software developer on a mini-job basis, which allowed me to gain valuable experience.</span>
+                </div>
               </div>
             </div>
-            <div class="website-resume-entry">
-              <div class="website-resume-entry-marker"></div>
-              <div class="website-resume-entry-content website-animation-right">
-                <h3 class="website-resume-entry-time h5">2010 - 2023</h3>
-                <h4 class="website-resume-entry-title h2">School</h4>
-                <span class="text-secondary">I spent my elementary school years at <a class="link-secondary" href="https://www.grundschule-arnold-von-wied.de/">Arnold-von-Wied Elementary School</a>. Until the end of my school career, I then attended the <a class="link-secondary" href="https://www.gebonn.de/">Bonn-Beuel Integrated Comprehensive School</a>. I successfully graduated in 2023 with a grade point average of 1.1.</span>
+            <div class="website-resume-entry website-animation-right">
+              <button type="button" class="website-resume-entry-toggle collapsed" data-bs-toggle="collapse" data-bs-target="#website-resume-entry-6" aria-expanded="false" aria-controls="website-resume-entry-6">
+                <span class="website-resume-entry-marker"></span>
+                <span class="website-resume-entry-title h2"><span class="website-resume-entry-time h5">2018 - 2019</span>Internship & Vacation Job</span>
+                <i class="website-resume-entry-chevron fa-solid fa-chevron-down"></i>
+              </button>
+              <div id="website-resume-entry-6" class="collapse" data-bs-parent="#website-resume-timeline">
+                <div class="website-resume-entry-text">
+                  <span class="text-secondary">I gained my first work experience during an internship at <a class="link-secondary" href="https://www.isb-solutions.de/">ISB Solutions GmbH</a>. Six months later, I took on a summer job at the same company, where I was able to make new contacts and expand my knowledge with useful new information.</span>
+                </div>
+              </div>
+            </div>
+            <div class="website-resume-entry website-animation-right">
+              <button type="button" class="website-resume-entry-toggle collapsed" data-bs-toggle="collapse" data-bs-target="#website-resume-entry-7" aria-expanded="false" aria-controls="website-resume-entry-7">
+                <span class="website-resume-entry-marker"></span>
+                <span class="website-resume-entry-title h2"><span class="website-resume-entry-time h5">2010 - 2023</span>School</span>
+                <i class="website-resume-entry-chevron fa-solid fa-chevron-down"></i>
+              </button>
+              <div id="website-resume-entry-7" class="collapse" data-bs-parent="#website-resume-timeline">
+                <div class="website-resume-entry-text">
+                  <span class="text-secondary">I spent my elementary school years at <a class="link-secondary" href="https://www.grundschule-arnold-von-wied.de/">Arnold-von-Wied Elementary School</a>. Until the end of my school career, I then attended the <a class="link-secondary" href="https://www.gebonn.de/">Bonn-Beuel Integrated Comprehensive School</a>. I successfully graduated in 2023 with a grade point average of 1.1.</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div id="testimonials" class="website-section">
           <h1 class="website-section-headline h6"><i class="fa-regular fa-message me-3"></i>TESTIMONIALS</h1>
-          <h2 class="website-section-title h1">Trust the <span class="website-highlight">opinions</span> of others</h2>
+          <h2 class="website-section-title h1">What <span class="website-highlight">others say</span> about me</h2>
           <div id="website-testimonials" class="carousel slide">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -189,394 +225,130 @@
           <h1 class="website-section-headline h6"><i class="fa-regular fa-building me-3"></i>COMPANIES</h1>
           <h2 class="website-section-title h1">Companies I have <span class="website-highlight">worked with</span></h2>
           <div id="website-companies">
-            <a href="https://dulno.com/" class="website-company website-animation-down" data-bs-toggle="tooltip-parent">
-              <img class="website-company-logo" src="static/img/companies/dulno.webp" alt="Dulno" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Dulno">
+            <a href="https://www.uni-bonn.de/" class="website-company website-animation-down" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="University of Bonn">
+              <img class="website-company-logo" src="static/img/companies/unibonn.webp" alt="University of Bonn">
             </a>
-            <a class="website-company website-animation-down website-animation-delay-1" data-bs-toggle="tooltip-parent">
-              <img class="website-company-logo" src="static/img/companies/taskwolf.webp" alt="Taskwolf" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Taskwolf">
+            <a href="https://dulno.com/" class="website-company website-animation-down website-animation-delay-1" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Dulno">
+              <img class="website-company-logo" src="static/img/companies/dulno.webp" alt="Dulno">
             </a>
-            <a href="https://stundio.de/" class="website-company website-animation-down website-animation-delay-2" data-bs-toggle="tooltip-parent">
-              <img class="website-company-logo" src="static/img/companies/stundio.webp" alt="Stundio" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Stundio">
+            <a href="https://stundio.de/" class="website-company website-animation-down website-animation-delay-2" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Stundio">
+              <img class="website-company-logo" src="static/img/companies/stundio.webp" alt="Stundio">
             </a>
-            <a href="https://www.isb-solutions.de/" class="website-company website-animation-down website-animation-delay-3" data-bs-toggle="tooltip-parent">
-              <img class="website-company-logo" src="static/img/companies/isb.webp" alt="ISB" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="ISB Solutions GmbH">
+            <a href="https://www.isb-solutions.de/" class="website-company website-animation-down website-animation-delay-3" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="ISB Solutions GmbH">
+              <img class="website-company-logo" src="static/img/companies/isb.webp" alt="ISB Solutions GmbH">
             </a>
-            <a href="https://www.gommehd.net/" class="website-company website-animation-down" data-bs-toggle="tooltip-parent">
-              <img class="website-company-logo" src="static/img/companies/gommehd.webp" alt="GommeHD.net" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="GommeHD.net">
+            <a href="https://www.gommehd.net/" class="website-company website-animation-down" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="GommeHD.net">
+              <img class="website-company-logo" src="static/img/companies/gommehd.webp" alt="GommeHD.net">
             </a>
-            <a href="https://iostein.de/" class="website-company website-animation-down" data-bs-toggle="tooltip-parent">
-              <img class="website-company-logo" src="static/img/companies/iostein.webp" alt="iostein.de" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="iostein.de">
+            <a href="https://iostein.de/" class="website-company website-animation-down" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="iostein.de">
+              <img class="website-company-logo" src="static/img/companies/iostein.webp" alt="iostein.de">
+            </a>
+            <a href="https://voelkers-brillen-laden.de/" class="website-company website-animation-down" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Völker's Brillen-Laden">
+              <img class="website-company-logo website-company-logo-mono" src="static/img/companies/voelkers.webp" alt="Völker's Brillen-Laden">
             </a>
           </div>
         </div>
         <div id="skills" class="website-section">
           <h1 class="website-section-headline h6"><i class="fa-solid fa-layer-group me-3"></i>SKILLS</h1>
           <h2 class="website-section-title h1">My <span class="website-highlight">technology</span> stack</h2>
-          <div id="website-stack">
-            <div class="website-skill website-animation-down">
-              <img class="website-skill-icon" src="static/img/languages/java.webp" alt="Java">
-              <h3 class="website-skill-name h5">Java</h3>
-              <h4 class="website-skill-rating h1">96%</h4>
+          <div id="website-stack" class="website-animation-stack">
+            <div class="website-stack-layer">
+              <div class="website-stack-plate"></div>
+              <div class="website-stack-tools">
+                <div class="website-stack-tool">
+                  <img src="static/img/languages/typescript.webp" alt="">
+                  <span>TypeScript</span>
+                </div>
+                <div class="website-stack-tool">
+                  <img src="static/img/languages/react.webp" alt="">
+                  <span>React</span>
+                </div>
+                <div class="website-stack-tool">
+                  <img src="static/img/languages/flutter.webp" alt="">
+                  <span>Flutter</span>
+                </div>
+              </div>
             </div>
-            <div class="website-skill website-animation-down website-animation-delay-1">
-              <img class="website-skill-icon p-1" src="static/img/languages/spring.webp" alt="Spring">
-              <h3 class="website-skill-name h5">Spring</h3>
-              <h4 class="website-skill-rating h1">91%</h4>
+            <div class="website-stack-layer">
+              <div class="website-stack-plate"></div>
+              <div class="website-stack-tools">
+                <div class="website-stack-tool">
+                  <img src="static/img/languages/java.webp" alt="">
+                  <span>Java</span>
+                </div>
+                <div class="website-stack-tool">
+                  <img src="static/img/languages/spring.webp" alt="">
+                  <span>Spring</span>
+                </div>
+                <div class="website-stack-tool">
+                  <img src="static/img/languages/fastapi.webp" alt="">
+                  <span>FastAPI</span>
+                </div>
+              </div>
             </div>
-            <div class="website-skill website-animation-down website-animation-delay-2">
-              <img class="website-skill-icon" src="static/img/languages/typescript.webp" alt="JavaScript">
-              <h3 class="website-skill-name h5">TypeScript</h3>
-              <h4 class="website-skill-rating h1">89%</h4>
-            </div>
-            <div class="website-skill website-animation-down website-animation-delay-3">
-              <img class="website-skill-icon" src="static/img/languages/react.webp" alt="JavaScript">
-              <h3 class="website-skill-name h5">React</h3>
-              <h4 class="website-skill-rating h1">85%</h4>
-            </div>
-            <div class="website-skill website-animation-down">
-              <img class="website-skill-icon" src="static/img/languages/docker.webp" alt="Docker">
-              <h3 class="website-skill-name h5">Docker</h3>
-              <h4 class="website-skill-rating h1">94%</h4>
-            </div>
-            <div class="website-skill website-animation-down website-animation-delay-1">
-              <img class="website-skill-icon" src="static/img/languages/kubernetes.webp" alt="Kubernetes">
-              <h3 class="website-skill-name h5">Kubernetes</h3>
-              <h4 class="website-skill-rating h1">92%</h4>
-            </div>
-            <div class="website-skill website-animation-down website-animation-delay-2">
-              <img class="website-skill-icon p-1" src="static/img/languages/cpp.webp" alt="C++">
-              <h3 class="website-skill-name h5">C++</h3>
-              <h4 class="website-skill-rating h1">82%</h4>
-            </div>
-            <div class="website-skill website-animation-down website-animation-delay-3">
-              <img class="website-skill-icon p-1" src="static/img/languages/flutter.webp" alt="Flutter">
-              <h3 class="website-skill-name h5">Flutter</h3>
-              <h4 class="website-skill-rating h1">87%</h4>
+            <div class="website-stack-layer">
+              <div class="website-stack-plate"></div>
+              <div class="website-stack-tools">
+                <div class="website-stack-tool">
+                  <img src="static/img/languages/docker.webp" alt="">
+                  <span>Docker</span>
+                </div>
+                <div class="website-stack-tool">
+                  <img src="static/img/languages/kubernetes.webp" alt="">
+                  <span>Kubernetes</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div id="portfolio" class="website-section">
           <h1 class="website-section-headline h6"><i class="fa-regular fa-folder-open me-3"></i>PORTFOLIO</h1>
           <h2 class="website-section-title h1">My biggest <span class="website-highlight">projects</span></h2>
-          <div class="website-portfolio-project website-animation-left">
-            <div class="d-sm-flex justify-content-between align-items-center mb-4">
-              <a class="link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://github.com/poddeck/"><h2 class="mb-0">PodDeck</h2></a>
-              <div class="d-flex align-items-center mt-sm-0 mt-3">
-                <span class="website-portfolio-project-skill ms-sm-3 ms-0 me-sm-0 me-2">Kubernetes</span>
-                <span class="website-portfolio-project-skill ms-sm-3 ms-0 me-sm-0 me-2">React</span>
-              </div>
-            </div>
-            <div id="website-portfolio-poddeck" class="carousel slide">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="static/img/portfolio/poddeck/2.webp" class="d-block w-100" alt="PodDeck">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/poddeck/3.webp" class="d-block w-100" alt="PodDeck">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/poddeck/4.webp" class="d-block w-100" alt="PodDeck">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/poddeck/5.webp" class="d-block w-100" alt="PodDeck">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/poddeck/6.webp" class="d-block w-100" alt="PodDeck">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/poddeck/7.webp" class="d-block w-100" alt="PodDeck">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/poddeck/8.webp" class="d-block w-100" alt="PodDeck">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/poddeck/9.webp" class="d-block w-100" alt="PodDeck">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/poddeck/10.webp" class="d-block w-100" alt="PodDeck">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/poddeck/11.webp" class="d-block w-100" alt="PodDeck">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/poddeck/12.webp" class="d-block w-100" alt="PodDeck">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/poddeck/13.webp" class="d-block w-100" alt="PodDeck">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/poddeck/14.webp" class="d-block w-100" alt="PodDeck">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/poddeck/15.webp" class="d-block w-100" alt="PodDeck">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/poddeck/1.webp" class="d-block w-100" alt="PodDeck">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/poddeck/16.webp" class="d-block w-100" alt="PodDeck">
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#website-portfolio-poddeck" data-bs-slide="prev" aria-label="Previous">
-                <span class="carousel-control-icon fa-solid fa-chevron-left display-6"></span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#website-portfolio-poddeck" data-bs-slide="next" aria-label="Next">
-                <span class="carousel-control-icon fa-solid fa-chevron-right display-6"></span>
-              </button>
-            </div>
-            <div class="mt-4 px-3">
-              <span class="text-secondary">PodDeck is a modern, open-source platform designed to simplify how teams interact with and manage Kubernetes clusters. The project provides a unified environment where operators, developers, and platform engineers can observe cluster health, monitor workloads, and perform operational tasks in real time without relying on multiple fragmented tools.</span>
-            </div>
-          </div>
-          <div class="website-portfolio-project website-animation-right">
-            <div class="d-sm-flex justify-content-between align-items-center mb-4">
-              <a class="link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://dulno.com/"><h2 class="mb-0">Dulno</h2></a>
-              <div class="d-flex align-items-center mt-sm-0 mt-3">
-                <span class="website-portfolio-project-skill ms-sm-3 ms-0 me-sm-0 me-2">Kubernetes</span>
-                <span class="website-portfolio-project-skill ms-sm-3 ms-0 me-sm-0 me-2">Flutter</span>
-              </div>
-            </div>
-            <div id="website-portfolio-dulno" class="carousel slide">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="static/img/portfolio/dulno/1.webp" class="d-block w-100" alt="Dulno">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/dulno/2.webp" class="d-block w-100" alt="Dulno">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/dulno/3.webp" class="d-block w-100" alt="Dulno">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/dulno/4.webp" class="d-block w-100" alt="Dulno">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/dulno/5.webp" class="d-block w-100" alt="Dulno">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/dulno/6.webp" class="d-block w-100" alt="Dulno">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/dulno/7.webp" class="d-block w-100" alt="Dulno">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/dulno/8.webp" class="d-block w-100" alt="Dulno">
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#website-portfolio-dulno" data-bs-slide="prev" aria-label="Previous">
-                <span class="carousel-control-icon fa-solid fa-chevron-left display-6"></span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#website-portfolio-dulno" data-bs-slide="next" aria-label="Next">
-                <span class="carousel-control-icon fa-solid fa-chevron-right display-6"></span>
-              </button>
-            </div>
-            <div class="mt-4 px-3">
-              <span class="text-secondary">Dulno is pursuing the idea of replacing analog paper stamp cards with digital stamp cards in the form of an app. I noticed that a digital stamp card has many advantages for both users and customers, as well as for the distributors of the stamp cards. The project is already being used by real customers and is helping to simplify the lives of many people, thereby creating real added value.</span>
-            </div>
-          </div>
-          <div class="website-portfolio-project website-animation-left">
-            <div class="d-sm-flex justify-content-between align-items-center mb-4">
-              <a class="link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"><h2 class="mb-0">Taskwolf</h2></a>
-              <div class="d-flex align-items-center mt-sm-0 mt-3">
-                <span class="website-portfolio-project-skill ms-sm-3 ms-0 me-sm-0 me-2">Java</span>
-                <span class="website-portfolio-project-skill ms-sm-3 ms-0 me-sm-0 me-2">Javascript</span>
-              </div>
-            </div>
-            <div id="website-portfolio-taskwolf" class="carousel slide">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="static/img/portfolio/taskwolf/1.webp" class="d-block w-100" alt="Taskwolf">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/taskwolf/2.webp" class="d-block w-100" alt="Taskwolf">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/taskwolf/3.webp" class="d-block w-100" alt="Taskwolf">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/taskwolf/4.webp" class="d-block w-100" alt="Taskwolf">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/taskwolf/5.webp" class="d-block w-100" alt="Taskwolf">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/taskwolf/6.webp" class="d-block w-100" alt="Taskwolf">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/taskwolf/7.webp" class="d-block w-100" alt="Taskwolf">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/taskwolf/8.webp" class="d-block w-100" alt="Taskwolf">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/taskwolf/9.webp" class="d-block w-100" alt="Taskwolf">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/taskwolf/10.webp" class="d-block w-100" alt="Taskwolf">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/taskwolf/11.webp" class="d-block w-100" alt="Taskwolf">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/taskwolf/12.webp" class="d-block w-100" alt="Taskwolf">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/taskwolf/13.webp" class="d-block w-100" alt="Taskwolf">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/taskwolf/14.webp" class="d-block w-100" alt="Taskwolf">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/taskwolf/15.webp" class="d-block w-100" alt="Taskwolf">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/taskwolf/16.webp" class="d-block w-100" alt="Taskwolf">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/taskwolf/17.webp" class="d-block w-100" alt="Taskwolf">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/taskwolf/18.webp" class="d-block w-100" alt="Taskwolf">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/taskwolf/19.webp" class="d-block w-100" alt="Taskwolf">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/taskwolf/20.webp" class="d-block w-100" alt="Taskwolf">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/taskwolf/21.webp" class="d-block w-100" alt="Taskwolf">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/taskwolf/22.webp" class="d-block w-100" alt="Taskwolf">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/taskwolf/23.webp" class="d-block w-100" alt="Taskwolf">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/taskwolf/24.webp" class="d-block w-100" alt="Taskwolf">
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#website-portfolio-taskwolf" data-bs-slide="prev" aria-label="Previous">
-                <span class="carousel-control-icon fa-solid fa-chevron-left display-6"></span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#website-portfolio-taskwolf" data-bs-slide="next" aria-label="Next">
-                <span class="carousel-control-icon fa-solid fa-chevron-right display-6"></span>
-              </button>
-            </div>
-            <div class="mt-4 px-3">
-              <span class="text-secondary">Taskwolf is a software automation platform that should enable everyone to quickly automate everyday processes without requiring extensive prior knowledge. To do this, workflows are created that have a trigger and execute actions when triggered. This simple principle makes it possible to automate a large number of tasks quickly.</span><br><br>
-              <span class="text-secondary">The project had a wide range of supporting functions designed to assist with automation. Although I invested a lot of time in the project, it unfortunately never achieved any significant success in terms of a broad user base, which is why I discontinued development on the project.</span>
-            </div>
-          </div>
-          <div class="website-portfolio-project website-animation-right">
-            <div class="d-sm-flex justify-content-between align-items-center mb-4">
-              <a class="link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://panel.dulno.com/"><h2 class="mb-0">Panel</h2></a>
-              <div class="d-flex align-items-center mt-sm-0 mt-3">
-                <span class="website-portfolio-project-skill ms-sm-3 ms-0 me-sm-0 me-2">Java</span>
-                <span class="website-portfolio-project-skill ms-sm-3 ms-0 me-sm-0 me-2">Kubernetes</span>
-              </div>
-            </div>
-            <div id="website-portfolio-panel" class="carousel slide">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="static/img/portfolio/panel/1.webp" class="d-block w-100" alt="Panel">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/panel/2.webp" class="d-block w-100" alt="Panel">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/panel/3.webp" class="d-block w-100" alt="Panel">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/panel/4.webp" class="d-block w-100" alt="Panel">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/panel/5.webp" class="d-block w-100" alt="Panel">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/panel/6.webp" class="d-block w-100" alt="Panel">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/panel/7.webp" class="d-block w-100" alt="Panel">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/panel/8.webp" class="d-block w-100" alt="Panel">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/panel/9.webp" class="d-block w-100" alt="Panel">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/panel/10.webp" class="d-block w-100" alt="Panel">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/panel/11.webp" class="d-block w-100" alt="Panel">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/panel/12.webp" class="d-block w-100" alt="Panel">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/panel/13.webp" class="d-block w-100" alt="Panel">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/panel/14.webp" class="d-block w-100" alt="Panel">
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#website-portfolio-panel" data-bs-slide="prev" aria-label="Previous">
-                <span class="carousel-control-icon fa-solid fa-chevron-left display-6"></span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#website-portfolio-panel" data-bs-slide="next" aria-label="Next">
-                <span class="carousel-control-icon fa-solid fa-chevron-right display-6"></span>
-              </button>
-            </div>
-            <div class="mt-4 px-3">
-              <span class="text-secondary">The panel is a project I developed to manage the infrastructure of my other projects efficiently and securely. Among other things, support functions were integrated into the panel to enable targeted responses to customer requests. The panel also features statistics and analysis functions.</span><br><br>
-              <span class="text-secondary">One of the core functions of the panel is a comprehensive Kubernetes administration interface. There, pods can be managed in a targeted manner, backups can be administered, and errors that have occurred can be evaluated.</span>
-            </div>
-          </div>
-          <div class="website-portfolio-project website-animation-left">
-            <div class="d-sm-flex justify-content-between align-items-center mb-4">
-              <a class="link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://github.com/breuerlukas/wing/"><h2 class="mb-0">Wing</h2></a>
-              <div class="d-flex align-items-center mt-sm-0 mt-3">
-                <span class="website-portfolio-project-skill ms-sm-3 ms-0 me-sm-0 me-2">C++</span>
-                <span class="website-portfolio-project-skill ms-sm-3 ms-0 me-sm-0 me-2">Arduino</span>
-              </div>
-            </div>
-            <div id="website-portfolio-wing" class="carousel slide">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="static/img/portfolio/wing/1.webp" class="d-block w-100" alt="Wing">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/wing/2.webp" class="d-block w-100" alt="Wing">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/wing/3.webp" class="d-block w-100" alt="Wing">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/wing/4.webp" class="d-block w-100" alt="Wing">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/wing/5.webp" class="d-block w-100" alt="Wing">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/wing/6.webp" class="d-block w-100" alt="Wing">
-                </div>
-                <div class="carousel-item">
-                  <img src="static/img/portfolio/wing/7.webp" class="d-block w-100" alt="Wing">
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#website-portfolio-wing" data-bs-slide="prev" aria-label="Previous">
-                <span class="carousel-control-icon fa-solid fa-chevron-left display-6"></span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#website-portfolio-wing" data-bs-slide="next" aria-label="Next">
-                <span class="carousel-control-icon fa-solid fa-chevron-right display-6"></span>
-              </button>
-            </div>
-            <div class="mt-4 px-3">
-              <span class="text-secondary">This project deals with the complete automation of remote-controlled aircraft. On the one hand, complex and sophisticated algorithms assist the pilot in flying and try to neutralize safety risks. On the other hand, these systems are used to fully automate the operation of these aircraft, making pilot intervention unnecessary.</span><br><br>
-              <span class="text-secondary">In the process, functionalities of already existing systems are extended and improved. The project aims to enable anyone to control such an aircraft and to make it easy to automate processes that are currently operated manually.</span>
-            </div>
+          <div id="website-portfolio-grid" class="website-animation-down">
+            <button type="button" class="website-portfolio-tile website-portfolio-tile-tall" data-bs-toggle="modal" data-bs-target="#website-portfolio-modal-insulink">
+              <span class="website-portfolio-tile-phone">
+                <img src="static/img/portfolio/insulink/app-1.webp" alt="">
+              </span>
+              <span class="website-portfolio-tile-info">
+                <span class="h5 d-block mb-1">Insulink</span>
+                <span class="text-secondary">Open-source glucose ecosystem</span>
+              </span>
+            </button>
+            <button type="button" class="website-portfolio-tile website-portfolio-tile-wide" data-bs-toggle="modal" data-bs-target="#website-portfolio-modal-poddeck">
+              <img src="static/img/portfolio/poddeck/2.webp" alt="">
+              <span class="website-portfolio-tile-info">
+                <span class="h5 d-block mb-1">PodDeck</span>
+                <span class="text-secondary">Open-source platform for managing Kubernetes clusters</span>
+              </span>
+            </button>
+            <button type="button" class="website-portfolio-tile" data-bs-toggle="modal" data-bs-target="#website-portfolio-modal-dulno">
+              <img src="static/img/portfolio/dulno/1.webp" alt="">
+              <span class="website-portfolio-tile-info">
+                <span class="h5 d-block mb-1">Dulno</span>
+                <span class="text-secondary">Digital stamp cards as an app</span>
+              </span>
+            </button>
+            <button type="button" class="website-portfolio-tile" data-bs-toggle="modal" data-bs-target="#website-portfolio-modal-taskwolf">
+              <img src="static/img/portfolio/taskwolf/1.webp" alt="">
+              <span class="website-portfolio-tile-info">
+                <span class="h5 d-block mb-1">Taskwolf</span>
+                <span class="text-secondary">Automation for everyday processes</span>
+              </span>
+            </button>
+            <button type="button" class="website-portfolio-tile website-portfolio-tile-half" data-bs-toggle="modal" data-bs-target="#website-portfolio-modal-panel">
+              <img src="static/img/portfolio/panel/2.webp" alt="">
+              <span class="website-portfolio-tile-info">
+                <span class="h5 d-block mb-1">Panel</span>
+                <span class="text-secondary">Administration panel for my infrastructure</span>
+              </span>
+            </button>
+            <button type="button" class="website-portfolio-tile website-portfolio-tile-half" data-bs-toggle="modal" data-bs-target="#website-portfolio-modal-wing">
+              <img src="static/img/portfolio/wing/1.webp" alt="">
+              <span class="website-portfolio-tile-info">
+                <span class="h5 d-block mb-1">Wing</span>
+                <span class="text-secondary">Autopilot for remote-controlled aircraft</span>
+              </span>
+            </button>
           </div>
         </div>
         <div id="footer" class="website-section">
@@ -601,7 +373,7 @@
           </a>
         </div>
         <div class="website-navigator-entry-container" data-bs-toggle="tooltip-parent">
-          <a id="website-navigator-entry-about" href="#about" class="website-navigator-entry website-navigator-entry-active" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="About" aria-label="About">
+          <a id="website-navigator-entry-about" href="#about" class="website-navigator-entry" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="About" aria-label="About">
             <i class="website-navigator-icon fa-regular fa-user"></i>
           </a>
         </div>
@@ -632,21 +404,408 @@
         </div>
       </div>
     </div>
+    <div id="website-portfolio-modal-insulink" class="modal fade" tabindex="-1" aria-label="Insulink" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content website-portfolio-project">
+          <button type="button" class="btn-close website-portfolio-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="d-sm-flex justify-content-between align-items-center mb-4">
+          <a class="link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://insulink.de/"><h2 class="mb-0">Insulink</h2></a>
+          <div class="d-flex align-items-center mt-sm-0 mt-3">
+            <span class="website-portfolio-project-skill ms-sm-3 ms-0 me-sm-0 me-2">Java</span>
+            <span class="website-portfolio-project-skill ms-sm-3 ms-0 me-sm-0 me-2">TypeScript</span>
+            <span class="website-portfolio-project-skill ms-sm-3 ms-0 me-sm-0 me-2">Python</span>
+          </div>
+        </div>
+        <div id="website-portfolio-insulink" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="static/img/portfolio/insulink/1.webp" class="d-block w-100" alt="Three screens of the Insulink app">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/insulink/2.webp" class="d-block w-100" alt="The Insulink app showing the current reading and the last 24 hours">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/insulink/3.webp" class="d-block w-100" alt="The Insulink app showing activity and health data">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/insulink/4.webp" class="d-block w-100" alt="The Insulink app showing the live sensor connection">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#website-portfolio-insulink" data-bs-slide="prev" aria-label="Previous">
+            <span class="carousel-control-icon fa-solid fa-chevron-left display-6"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#website-portfolio-insulink" data-bs-slide="next" aria-label="Next">
+            <span class="carousel-control-icon fa-solid fa-chevron-right display-6"></span>
+          </button>
+        </div>
+        <div class="mt-4 px-3">
+          <span class="text-secondary">Insulink is a fully open-source glucose ecosystem. The app reads a FreeStyle Libre 3 sensor directly over Bluetooth and shows the live reading, the last 24 hours and the time in range, with no vendor app in between.</span><br><br>
+          <span class="text-secondary">The project is built from four independent parts that work together: the app, a panel in the browser, a self-hostable API and a predictor that forecasts where the glucose level is heading. Insulink is not a medical device.</span>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div id="website-portfolio-modal-poddeck" class="modal fade" tabindex="-1" aria-label="PodDeck" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content website-portfolio-project">
+          <button type="button" class="btn-close website-portfolio-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="d-sm-flex justify-content-between align-items-center mb-4">
+          <a class="link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://github.com/poddeck/"><h2 class="mb-0">PodDeck</h2></a>
+          <div class="d-flex align-items-center mt-sm-0 mt-3">
+            <span class="website-portfolio-project-skill ms-sm-3 ms-0 me-sm-0 me-2">Kubernetes</span>
+            <span class="website-portfolio-project-skill ms-sm-3 ms-0 me-sm-0 me-2">React</span>
+          </div>
+        </div>
+        <div id="website-portfolio-poddeck" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="static/img/portfolio/poddeck/2.webp" class="d-block w-100" alt="PodDeck">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/poddeck/3.webp" class="d-block w-100" alt="PodDeck">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/poddeck/4.webp" class="d-block w-100" alt="PodDeck">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/poddeck/5.webp" class="d-block w-100" alt="PodDeck">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/poddeck/6.webp" class="d-block w-100" alt="PodDeck">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/poddeck/7.webp" class="d-block w-100" alt="PodDeck">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/poddeck/8.webp" class="d-block w-100" alt="PodDeck">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/poddeck/9.webp" class="d-block w-100" alt="PodDeck">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/poddeck/10.webp" class="d-block w-100" alt="PodDeck">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/poddeck/11.webp" class="d-block w-100" alt="PodDeck">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/poddeck/12.webp" class="d-block w-100" alt="PodDeck">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/poddeck/13.webp" class="d-block w-100" alt="PodDeck">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/poddeck/14.webp" class="d-block w-100" alt="PodDeck">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/poddeck/15.webp" class="d-block w-100" alt="PodDeck">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/poddeck/1.webp" class="d-block w-100" alt="PodDeck">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/poddeck/16.webp" class="d-block w-100" alt="PodDeck">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#website-portfolio-poddeck" data-bs-slide="prev" aria-label="Previous">
+            <span class="carousel-control-icon fa-solid fa-chevron-left display-6"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#website-portfolio-poddeck" data-bs-slide="next" aria-label="Next">
+            <span class="carousel-control-icon fa-solid fa-chevron-right display-6"></span>
+          </button>
+        </div>
+        <div class="mt-4 px-3">
+          <span class="text-secondary">PodDeck is a modern, open-source platform designed to simplify how teams interact with and manage Kubernetes clusters. The project provides a unified environment where operators, developers, and platform engineers can observe cluster health, monitor workloads, and perform operational tasks in real time without relying on multiple fragmented tools.</span>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div id="website-portfolio-modal-dulno" class="modal fade" tabindex="-1" aria-label="Dulno" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content website-portfolio-project">
+          <button type="button" class="btn-close website-portfolio-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="d-sm-flex justify-content-between align-items-center mb-4">
+          <a class="link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://dulno.com/"><h2 class="mb-0">Dulno</h2></a>
+          <div class="d-flex align-items-center mt-sm-0 mt-3">
+            <span class="website-portfolio-project-skill ms-sm-3 ms-0 me-sm-0 me-2">Kubernetes</span>
+            <span class="website-portfolio-project-skill ms-sm-3 ms-0 me-sm-0 me-2">Flutter</span>
+          </div>
+        </div>
+        <div id="website-portfolio-dulno" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="static/img/portfolio/dulno/1.webp" class="d-block w-100" alt="Dulno">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/dulno/2.webp" class="d-block w-100" alt="Dulno">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/dulno/3.webp" class="d-block w-100" alt="Dulno">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/dulno/4.webp" class="d-block w-100" alt="Dulno">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/dulno/5.webp" class="d-block w-100" alt="Dulno">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/dulno/6.webp" class="d-block w-100" alt="Dulno">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/dulno/7.webp" class="d-block w-100" alt="Dulno">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/dulno/8.webp" class="d-block w-100" alt="Dulno">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#website-portfolio-dulno" data-bs-slide="prev" aria-label="Previous">
+            <span class="carousel-control-icon fa-solid fa-chevron-left display-6"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#website-portfolio-dulno" data-bs-slide="next" aria-label="Next">
+            <span class="carousel-control-icon fa-solid fa-chevron-right display-6"></span>
+          </button>
+        </div>
+        <div class="mt-4 px-3">
+          <span class="text-secondary">Dulno is pursuing the idea of replacing analog paper stamp cards with digital stamp cards in the form of an app. I noticed that a digital stamp card has many advantages for both users and customers, as well as for the distributors of the stamp cards. The project is already being used by real customers and is helping to simplify the lives of many people, thereby creating real added value.</span>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div id="website-portfolio-modal-taskwolf" class="modal fade" tabindex="-1" aria-label="Taskwolf" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content website-portfolio-project">
+          <button type="button" class="btn-close website-portfolio-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="d-sm-flex justify-content-between align-items-center mb-4">
+          <a class="link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"><h2 class="mb-0">Taskwolf</h2></a>
+          <div class="d-flex align-items-center mt-sm-0 mt-3">
+            <span class="website-portfolio-project-skill ms-sm-3 ms-0 me-sm-0 me-2">Java</span>
+            <span class="website-portfolio-project-skill ms-sm-3 ms-0 me-sm-0 me-2">JavaScript</span>
+          </div>
+        </div>
+        <div id="website-portfolio-taskwolf" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="static/img/portfolio/taskwolf/1.webp" class="d-block w-100" alt="Taskwolf">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/taskwolf/2.webp" class="d-block w-100" alt="Taskwolf">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/taskwolf/3.webp" class="d-block w-100" alt="Taskwolf">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/taskwolf/4.webp" class="d-block w-100" alt="Taskwolf">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/taskwolf/5.webp" class="d-block w-100" alt="Taskwolf">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/taskwolf/6.webp" class="d-block w-100" alt="Taskwolf">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/taskwolf/7.webp" class="d-block w-100" alt="Taskwolf">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/taskwolf/8.webp" class="d-block w-100" alt="Taskwolf">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/taskwolf/9.webp" class="d-block w-100" alt="Taskwolf">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/taskwolf/10.webp" class="d-block w-100" alt="Taskwolf">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/taskwolf/11.webp" class="d-block w-100" alt="Taskwolf">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/taskwolf/12.webp" class="d-block w-100" alt="Taskwolf">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/taskwolf/13.webp" class="d-block w-100" alt="Taskwolf">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/taskwolf/14.webp" class="d-block w-100" alt="Taskwolf">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/taskwolf/15.webp" class="d-block w-100" alt="Taskwolf">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/taskwolf/16.webp" class="d-block w-100" alt="Taskwolf">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/taskwolf/17.webp" class="d-block w-100" alt="Taskwolf">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/taskwolf/18.webp" class="d-block w-100" alt="Taskwolf">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/taskwolf/19.webp" class="d-block w-100" alt="Taskwolf">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/taskwolf/20.webp" class="d-block w-100" alt="Taskwolf">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/taskwolf/21.webp" class="d-block w-100" alt="Taskwolf">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/taskwolf/22.webp" class="d-block w-100" alt="Taskwolf">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/taskwolf/23.webp" class="d-block w-100" alt="Taskwolf">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/taskwolf/24.webp" class="d-block w-100" alt="Taskwolf">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#website-portfolio-taskwolf" data-bs-slide="prev" aria-label="Previous">
+            <span class="carousel-control-icon fa-solid fa-chevron-left display-6"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#website-portfolio-taskwolf" data-bs-slide="next" aria-label="Next">
+            <span class="carousel-control-icon fa-solid fa-chevron-right display-6"></span>
+          </button>
+        </div>
+        <div class="mt-4 px-3">
+          <span class="text-secondary">Taskwolf is a software automation platform that should enable everyone to quickly automate everyday processes without requiring extensive prior knowledge. To do this, workflows are created that have a trigger and execute actions when triggered. This simple principle makes it possible to automate a large number of tasks quickly.</span><br><br>
+          <span class="text-secondary">The project had a wide range of supporting functions designed to assist with automation. Although I invested a lot of time in the project, it unfortunately never achieved any significant success in terms of a broad user base, which is why I discontinued development on the project.</span>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div id="website-portfolio-modal-panel" class="modal fade" tabindex="-1" aria-label="Panel" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content website-portfolio-project">
+          <button type="button" class="btn-close website-portfolio-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="d-sm-flex justify-content-between align-items-center mb-4">
+          <a class="link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://panel.dulno.com/"><h2 class="mb-0">Panel</h2></a>
+          <div class="d-flex align-items-center mt-sm-0 mt-3">
+            <span class="website-portfolio-project-skill ms-sm-3 ms-0 me-sm-0 me-2">Java</span>
+            <span class="website-portfolio-project-skill ms-sm-3 ms-0 me-sm-0 me-2">Kubernetes</span>
+          </div>
+        </div>
+        <div id="website-portfolio-panel" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="static/img/portfolio/panel/1.webp" class="d-block w-100" alt="Panel">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/panel/2.webp" class="d-block w-100" alt="Panel">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/panel/3.webp" class="d-block w-100" alt="Panel">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/panel/4.webp" class="d-block w-100" alt="Panel">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/panel/5.webp" class="d-block w-100" alt="Panel">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/panel/6.webp" class="d-block w-100" alt="Panel">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/panel/7.webp" class="d-block w-100" alt="Panel">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/panel/8.webp" class="d-block w-100" alt="Panel">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/panel/9.webp" class="d-block w-100" alt="Panel">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/panel/10.webp" class="d-block w-100" alt="Panel">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/panel/11.webp" class="d-block w-100" alt="Panel">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/panel/12.webp" class="d-block w-100" alt="Panel">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/panel/13.webp" class="d-block w-100" alt="Panel">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/panel/14.webp" class="d-block w-100" alt="Panel">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#website-portfolio-panel" data-bs-slide="prev" aria-label="Previous">
+            <span class="carousel-control-icon fa-solid fa-chevron-left display-6"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#website-portfolio-panel" data-bs-slide="next" aria-label="Next">
+            <span class="carousel-control-icon fa-solid fa-chevron-right display-6"></span>
+          </button>
+        </div>
+        <div class="mt-4 px-3">
+          <span class="text-secondary">The panel is a project I developed to manage the infrastructure of my other projects efficiently and securely. Among other things, support functions were integrated into the panel to enable targeted responses to customer requests. The panel also features statistics and analysis functions.</span><br><br>
+          <span class="text-secondary">One of the core functions of the panel is a comprehensive Kubernetes administration interface. There, pods can be managed in a targeted manner, backups can be administered, and errors that have occurred can be evaluated.</span>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div id="website-portfolio-modal-wing" class="modal fade" tabindex="-1" aria-label="Wing" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content website-portfolio-project">
+          <button type="button" class="btn-close website-portfolio-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="d-sm-flex justify-content-between align-items-center mb-4">
+          <a class="link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://github.com/breuerlukas/wing/"><h2 class="mb-0">Wing</h2></a>
+          <div class="d-flex align-items-center mt-sm-0 mt-3">
+            <span class="website-portfolio-project-skill ms-sm-3 ms-0 me-sm-0 me-2">C++</span>
+            <span class="website-portfolio-project-skill ms-sm-3 ms-0 me-sm-0 me-2">Arduino</span>
+          </div>
+        </div>
+        <div id="website-portfolio-wing" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="static/img/portfolio/wing/1.webp" class="d-block w-100" alt="Wing">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/wing/2.webp" class="d-block w-100" alt="Wing">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/wing/3.webp" class="d-block w-100" alt="Wing">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/wing/4.webp" class="d-block w-100" alt="Wing">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/wing/5.webp" class="d-block w-100" alt="Wing">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/wing/6.webp" class="d-block w-100" alt="Wing">
+            </div>
+            <div class="carousel-item">
+              <img src="static/img/portfolio/wing/7.webp" class="d-block w-100" alt="Wing">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#website-portfolio-wing" data-bs-slide="prev" aria-label="Previous">
+            <span class="carousel-control-icon fa-solid fa-chevron-left display-6"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#website-portfolio-wing" data-bs-slide="next" aria-label="Next">
+            <span class="carousel-control-icon fa-solid fa-chevron-right display-6"></span>
+          </button>
+        </div>
+        <div class="mt-4 px-3">
+          <span class="text-secondary">This project deals with the complete automation of remote-controlled aircraft. On the one hand, complex and sophisticated algorithms assist the pilot in flying and try to neutralize safety risks. On the other hand, these systems are used to fully automate the operation of these aircraft, making pilot intervention unnecessary.</span><br><br>
+          <span class="text-secondary">In the process, functionalities of already existing systems are extended and improved. The project aims to enable anyone to control such an aircraft and to make it easy to automate processes that are currently operated manually.</span>
+        </div>
+        </div>
+      </div>
+    </div>
   </body>
 
   <script>
     $(document).ready(function() {
       setupTooltips();
       setupCopyright();
-      checkAnimations();
+      document.fonts.ready.then(setupAnimations);
+      setupStatistics();
       checkNavigation();
-      $(window).scroll(function() {
-        checkAnimations();
-        checkNavigation();
-      });
+      $(window).scroll(checkNavigation);
     });
 
     function setupTooltips() {
+      document.querySelectorAll(".website-company").forEach(function (company) {
+        new bootstrap.Tooltip(company);
+      });
       let tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip-parent"]'))
       tooltipTriggerList.map(function (tooltipTriggerEl) {
         tooltipTriggerEl.classList.add("position-relative");
@@ -656,48 +815,44 @@
       });
     }
 
-    function checkAnimations() {
-      checkAnimation("website-animation-opacity", "website-animation-opacity-show");
-      checkAnimation("website-animation-left", "website-animation-left-show");
-      checkAnimation("website-animation-right", "website-animation-right-show");
-      checkAnimation("website-animation-up", "website-animation-up-show");
-      checkAnimation("website-animation-down", "website-animation-down-show");
-      checkAnimation("website-animation-fly", "website-animation-fly-show");
+    function setupAnimations() {
+      let observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("website-animation-show");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {rootMargin: "0px 0px -10% 0px"});
+      document.querySelectorAll('[class*="website-animation-"]').forEach(function (element) {
+        observer.observe(element);
+      });
     }
 
-    function checkAnimation(elementClass, animationClass) {
-      let elements = [...document.getElementsByClassName(elementClass)];
-      for (let i = 0; i < elements.length; i++) {
-        let element = elements[i];
-        if (window.screen.width < 1400) {
-          element.classList.remove(elementClass);
-          continue;
-        }
-        let bottom_of_object = element.getBoundingClientRect().top - window.screen.height;
-        if (bottom_of_object < -window.screen.height / 6) {
-          processAnimation(element, elementClass, animationClass)
-        }
+    function setupStatistics() {
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        return;
       }
-    }
-
-    function processAnimation(element, elementClass, animationClass) {
-      let delay = 0;
-      if (element.classList.contains("website-animation-delay-1")) {
-        delay = 100;
-      } else if (element.classList.contains("website-animation-delay-2")) {
-        delay = 300;
-      } else if (element.classList.contains("website-animation-delay-3")) {
-        delay = 500;
-      } else if (element.classList.contains("website-animation-delay-4")) {
-        delay = 700;
-      }
-      setTimeout(function() {
-        element.classList.remove(elementClass);
-        element.classList.add(animationClass);
-        setTimeout(function () {
-          element.classList.remove(animationClass);
-        }, 1500);
-      }, delay);
+      let observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) {
+            return;
+          }
+          observer.unobserve(entry.target);
+          let target = Number(entry.target.textContent);
+          let start = performance.now();
+          requestAnimationFrame(function step(now) {
+            let progress = Math.min((now - start) / 1200, 1);
+            entry.target.textContent = Math.round(target * (1 - Math.pow(1 - progress, 3)));
+            if (progress < 1) {
+              requestAnimationFrame(step);
+            }
+          });
+        });
+      });
+      document.querySelectorAll(".website-statistic-count").forEach(function (element) {
+        observer.observe(element);
+      });
     }
 
     function checkNavigation() {
