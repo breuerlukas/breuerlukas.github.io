@@ -840,3 +840,20 @@ a:focus-visible, button:focus-visible {
   border-top: 1px solid var(--border-color);
   margin: auto;
 }
+
+.website-portfolio-project-link {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  border: 1px solid var(--border-color);
+  border-radius: 100px;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+
+.website-portfolio-project-link:hover {
+  background-color: white;
+  color: black;
+}

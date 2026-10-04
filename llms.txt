@@ -15,10 +15,10 @@ Contact: contact@lukasbreuer.de
 ## Projects
 
 - [Insulink](https://insulink.de/): Fully open-source glucose ecosystem with an app, a browser panel, a self-hostable API and a predictor. Not a medical device
-- [PodDeck](https://github.com/poddeck/): Open-source platform for observing and managing Kubernetes clusters
-- [Dulno](https://dulno.com/): Digital stamp cards as an app, replacing paper stamp cards
+- [PodDeck](https://github.com/poddeck): Open-source platform for observing and managing Kubernetes clusters
+- [Dulno](https://github.com/dulno): Digital stamp cards as an app, replacing paper stamp cards
 - [Wing](https://github.com/breuerlukas/wing/): Autopilot for remote-controlled aircraft, written in C++ for Arduino
-- Taskwolf: Automation platform for everyday processes, discontinued
+- [Taskwolf](https://github.com/taskwolf-net): Automation platform for everyday processes, discontinued
 - Panel: Administration panel for the infrastructure of his own projects, including Kubernetes management
 
 ## Profiles
